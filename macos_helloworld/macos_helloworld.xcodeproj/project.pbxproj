@@ -9,16 +9,20 @@
 /* Begin PBXBuildFile section */
 		A6A93A9322E9348D002F8988 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A93A9222E9348D002F8988 /* AppDelegate.swift */; };
 		A6A93A9522E9348E002F8988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6A93A9422E9348E002F8988 /* Assets.xcassets */; };
-		A6A93A9822E9348E002F8988 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A93A9622E9348E002F8988 /* MainMenu.xib */; };
+		A6A93AA122E93A8C002F8988 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A93AA022E93A8C002F8988 /* main.swift */; };
+		A6A93AA322E93C09002F8988 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A93AA222E93C09002F8988 /* ViewController.swift */; };
+		A6A93AA522E93EE4002F8988 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A93AA422E93EE4002F8988 /* MyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A6A93A8F22E9348D002F8988 /* macos_helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macos_helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6A93A9222E9348D002F8988 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6A93A9422E9348E002F8988 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A6A93A9722E9348E002F8988 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		A6A93A9922E9348E002F8988 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6A93A9A22E9348E002F8988 /* macos_helloworld.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macos_helloworld.entitlements; sourceTree = "<group>"; };
+		A6A93AA022E93A8C002F8988 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A6A93AA222E93C09002F8988 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6A93AA422E93EE4002F8988 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +56,10 @@
 			isa = PBXGroup;
 			children = (
 				A6A93A9222E9348D002F8988 /* AppDelegate.swift */,
+				A6A93AA222E93C09002F8988 /* ViewController.swift */,
+				A6A93AA422E93EE4002F8988 /* MyView.swift */,
+				A6A93AA022E93A8C002F8988 /* main.swift */,
 				A6A93A9422E9348E002F8988 /* Assets.xcassets */,
-				A6A93A9622E9348E002F8988 /* MainMenu.xib */,
 				A6A93A9922E9348E002F8988 /* Info.plist */,
 				A6A93A9A22E9348E002F8988 /* macos_helloworld.entitlements */,
 			);
@@ -119,7 +125,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6A93A9522E9348E002F8988 /* Assets.xcassets in Resources */,
-				A6A93A9822E9348E002F8988 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,22 +135,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A93AA522E93EE4002F8988 /* MyView.swift in Sources */,
+				A6A93AA322E93C09002F8988 /* ViewController.swift in Sources */,
+				A6A93AA122E93A8C002F8988 /* main.swift in Sources */,
 				A6A93A9322E9348D002F8988 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		A6A93A9622E9348E002F8988 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A6A93A9722E9348E002F8988 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A6A93A9B22E9348E002F8988 /* Debug */ = {
