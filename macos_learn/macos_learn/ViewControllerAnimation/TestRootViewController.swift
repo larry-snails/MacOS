@@ -13,6 +13,7 @@ class TestRootViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         initButtons()
+        addGestureRecognizer()
     }
 
     func initButtons() {
@@ -71,4 +72,73 @@ class TestRootViewController: BaseViewController {
         self.transition(from: viewController, to: dismissController, options: NSViewController.TransitionOptions.crossfade, completionHandler: nil)
     }
 
+    func addGestureRecognizer() {
+
+        let gestureView = BaseView(frame: NSRect(x: 200, y: 50, width: 300, height: 300))
+        gestureView.layer?.backgroundColor = NSColor.yellow.cgColor
+        self.view.addSubview(gestureView)
+
+        // 点击手势
+        let gesture = NSClickGestureRecognizer(target: self, action: #selector(clickGesture(_:)))
+        gesture.numberOfClicksRequired = 1
+        gestureView.addGestureRecognizer(gesture)
+
+        //滑动手势
+        let pan = NSPanGestureRecognizer(target: self, action: #selector(panGesture(_:)))
+        gestureView.addGestureRecognizer(pan)
+
+        //滑动手势
+        let press = NSPressGestureRecognizer(target: self, action: #selector(pressGesture(_:)))
+        press.minimumPressDuration = 1
+        gestureView.addGestureRecognizer(press)
+
+        //滑动手势
+        let manification = NSMagnificationGestureRecognizer(target: self, action: #selector(manificationGesture(_:)))
+        gestureView.addGestureRecognizer(manification)
+
+        //滑动手势
+        let rotation = NSRotationGestureRecognizer(target: self, action: #selector(rotationGesture(_:)))
+        gestureView.addGestureRecognizer(rotation)
+    }
+
+    @objc func clickGesture(_ gesture: NSClickGestureRecognizer) {
+        let point = gesture.location(in: gesture.view)
+        print("clickGesture  at  point: (x: \(point.x), y: \(point.y)")
+    }
+
+    @objc func panGesture(_ gesture: NSPanGestureRecognizer) {
+        switch gesture.state {
+        case .began:
+            let point = gesture.location(in: gesture.view)
+            print("panGesture begin at point: (x: \(point.x), y: \(point.y)")
+        case .ended:
+            let point = gesture.location(in: gesture.view)
+            print("panGesture end at point: (x: \(point.x), y: \(point.y)")
+        case .changed:
+            let point = gesture.location(in: gesture.view)
+            print("panGesture change at point: (x: \(point.x), y: \(point.y)")
+        case .cancelled:
+            let point = gesture.location(in: gesture.view)
+            print("panGesture cancel at point: (x: \(point.x), y: \(point.y)")
+        case .failed:
+            let point = gesture.location(in: gesture.view)
+            print("panGesture faild at point: (x: \(point.x), y: \(point.y)")
+        default:
+            break;
+
+        }
+    }
+
+    @objc func pressGesture(_ gesture: NSPanGestureRecognizer) {
+        let point = gesture.location(in: gesture.view)
+        print("pressGesture at point: (x: \(point.x), y: \(point.y)")
+    }
+
+    @objc func manificationGesture(_ gesture: NSPanGestureRecognizer) {
+
+    }
+
+    @objc func rotationGesture(_ gesture: NSPanGestureRecognizer) {
+
+    }
 }
