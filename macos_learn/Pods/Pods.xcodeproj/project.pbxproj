@@ -1,0 +1,941 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00236C834C7A127CE32202698627FDAA /* LayoutItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12039879D0A741078C56311624A2D904 /* LayoutItem.swift */; };
+		02BBBADC3E6DC747C030A99DF20EB531 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D36064176B88F8EEFEA6F65E485CE /* Constraint.swift */; };
+		22CBA5FDBBC1B11DD22E53A77138F150 /* Cartography-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DEE479F189D89A041373B67761B40BD /* Cartography-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		263142CA7E25C79FC87B18E71EE500AC /* ORSSerialPort-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1F94DA9935EE2E95E3D827A492E6B2 /* ORSSerialPort-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28DDDCD8E16F527C375B863AB0D7C6AA /* LayoutProxy+TypeErasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A556481D31201CC4EB40B4F9364AF6B /* LayoutProxy+TypeErasure.swift */; };
+		297AD27064E5F26EF7FAAFE739FA0514 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E298A4AAC335BEDA86EEB70774A367 /* Context.swift */; };
+		2AE5D2215BF58A3D7FD4F87D256ADEB1 /* LayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A756A72F3A75D08ECBC343A103D68E /* LayoutGuide.swift */; };
+		38D05E5BD5B08D5B3A49FBCF96F4A20E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63216C098C1946EC7C6368637209A5B /* Cocoa.framework */; };
+		3A5E5B04623E4707664C4334CA6905E6 /* Cartography-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFC65D507B8A25397CBD6E6B4B0682 /* Cartography-dummy.m */; };
+		41C1283E9FA9D44D9A3B5EEBF7BCCED6 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156599C940D4124A23E2F78281BFA0CE /* Expression.swift */; };
+		4A471CF53AD5174580D31C108AA6C96C /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = E167D9D117433FC0DCCF9266AAFC15F5 /* Point.swift */; };
+		4DF5497F3CD711F133A88E4E4290C386 /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6F57B0BED761CBE4231ED51837F646 /* ORSSerialPortManager.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		52BBDED723BCE758ABCC796F2266177B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CFB6DC0CC322EAAB670359CF0E2806 /* Extensions.swift */; };
+		54B928421E9142AB9C478B4799EC1225 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5C17C03CB8191E8775D78B9413606 /* Size.swift */; };
+		573C9CE105BFC8826ADBCCCC8F1BC9B9 /* Compound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D90F26AAB4BCC676A0E7D72F7E6CCF /* Compound.swift */; };
+		590E2E8D217D8CC7F87D547BAE7073D2 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0E44E1CDFE075AE549C3CC695D08A0 /* View.swift */; };
+		5C32A437E494FD34E81B98695435C558 /* ORSSerialRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 53F9F4BAB81AD3AC5D4FA008CCA2B538 /* ORSSerialRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65D7C654D704CA14937A888ADCE31D79 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A5CEA9C2D9DDE43CBDBEA0417AF17BC6 /* ORSSerialPacketDescriptor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		66FE80F63CE053E6FE1CC2E0F1CCFCC1 /* LayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D51A07E09BA0136DCCEE704FB08A2B /* LayoutSupport.swift */; };
+		670478DCAAA7B43B2AE687B62D44A2D9 /* ORSSerialPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 94E6FE00D4433DCC82EC258C64B01C4B /* ORSSerialPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		671A0F6DE62F40D72D223D7462B6BAB2 /* Distribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B26CB1FA3E93622CE9ED3CF8048036A /* Distribute.swift */; };
+		685A8EB9BB5E42309C03DD9607EB1648 /* ViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B6A9C50E6F3B16FE00DA731F30625A /* ViewProxy.swift */; };
+		7354AEE6A2CCD6CF94242AD4CF89A1D7 /* ORSSerialPacketDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 42658C7560CC2FC22D695F3AD5812228 /* ORSSerialPacketDescriptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		779CFEB63C5C71608B00D77BA095DFC9 /* LayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6A8BFAB11CEE391DCE7FF4F407F231 /* LayoutProxy.swift */; };
+		830DF76D1B7EB7FDDFF0AE4598C5E058 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6819236AF37AFC3F43B5D068D7A623EB /* Edges.swift */; };
+		84C0F90298C911603897B3CCDEFD330F /* Coefficients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5579196ED930F79E04138193E45CAE /* Coefficients.swift */; };
+		8B42BA13BEEE456A84E59B0204D8F1E1 /* ORSSerialPortManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FFFAF45500D997259F251C300D4A1475 /* ORSSerialPortManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99CE86F391D6CE28EB52E85B786F96C6 /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF82AA65E71E04959349D0AB1F3960A2 /* Edge.swift */; };
+		9EDDE083B2E725C0448399E64949630C /* ORSSerialBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 34B892E6C85B5809039B54D1386A6AC3 /* ORSSerialBuffer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9EEF39B0DA95517F805323112A5CBFF8 /* Align.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F92161C85C61A96A3457B96EC7E664D /* Align.swift */; };
+		A0723E428B0263F66F9A023A35C447CE /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A88481FE7E6A728CEF855C25AAE5F2 /* IOKit.framework */; };
+		A16C3D5E287AD02B9C70FC35A792D106 /* Pods-macos_learn-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 785A04DF5B1BA90F7F82770FB30A4F88 /* Pods-macos_learn-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A75846BC6E5DF1902E22BB032A6FCE0D /* Constrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395167F6AE4180112C91CD9DD86E07F5 /* Constrain.swift */; };
+		ABBB116A073E7C682F7F6863D5E7729C /* AutoresizingMaskLayoutProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0B4E3370C838176FC0DCF68E97E594 /* AutoresizingMaskLayoutProxy.swift */; };
+		ACDD3A6408F9733576C5E6892965ACC6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63216C098C1946EC7C6368637209A5B /* Cocoa.framework */; };
+		B290B7C04280B113FA0362B88DEB4F33 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D63216C098C1946EC7C6368637209A5B /* Cocoa.framework */; };
+		BB0AE0F60848088A834341ED2E9A1F77 /* LayoutSupportProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D24D7F15852908C745DA17C732F4BE42 /* LayoutSupportProxy.swift */; };
+		BB5D4E4A7047047C4C48DF677FFCBF02 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DDFE4DF2364CA8AE32516A930EB60B /* Property.swift */; };
+		C03A14B636DF3284FD0407A0BB4BF26B /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19AAF2F6CD1EAE633C8FD5C74C91DA74 /* Priority.swift */; };
+		CEC61FB002508003B7C7D476F2F4A1FF /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D1036E90EE92E8FE3C5937673CBA3A /* ORSSerialPort.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DF1DDD621CD4880120BBA42AD7AE208A /* ORSSerialPort-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 691107C68639CEF8E146AA91CB544936 /* ORSSerialPort-dummy.m */; };
+		E6841949F497AEE368E6D1D84049A15D /* Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D909C3465668DACE32F4D11A0DF51F04 /* Dimension.swift */; };
+		F1BD29EE223FA3AE81C8C8F973FF2852 /* LayoutGuideProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700B2F4C7918F6A88F54FA847DC4CE00 /* LayoutGuideProxy.swift */; };
+		F25A1A8E53CE5CAB05D2C5D1516A233B /* ConstraintGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5A560BB4CB3A7F53F75C200E0C281C /* ConstraintGroup.swift */; };
+		F36039D67FAB7EB0920FBD5E93061362 /* Pods-macos_learn-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DD8A136C97B386D2A3EF6D458FD8F /* Pods-macos_learn-dummy.m */; };
+		F6634F4512DE2566EB5D6478A24F4C18 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF80AA3F313E60C25CEDBD91A46BBC2 /* ORSSerialRequest.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F7B4C9AB6D35257E3D14C3F5C6F2C4B5 /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A326131A837D9C7F5BC4FED66355D6E /* ORSSerialBuffer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C9330EA2C7293649DA42321976463A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 708D003F9C720BD33E7978206818B248;
+			remoteInfo = ORSSerialPort;
+		};
+		E5FA9CF2E78BBBB6A6049E8094FE4BF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57DDDA5C831455FB20F4FF618CF51434;
+			remoteInfo = Cartography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02DEEC5EBF5803E74952677C45922354 /* Pods-macos_learn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-macos_learn.debug.xcconfig"; sourceTree = "<group>"; };
+		0659D14DBDC0E20A369CAD590EA84F9A /* Pods_macos_learn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_macos_learn.framework; path = "Pods-macos_learn.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09DDFE4DF2364CA8AE32516A930EB60B /* Property.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Property.swift; path = Cartography/Property.swift; sourceTree = "<group>"; };
+		11A5C17C03CB8191E8775D78B9413606 /* Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Size.swift; path = Cartography/Size.swift; sourceTree = "<group>"; };
+		12039879D0A741078C56311624A2D904 /* LayoutItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutItem.swift; path = Cartography/LayoutItem.swift; sourceTree = "<group>"; };
+		156599C940D4124A23E2F78281BFA0CE /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Cartography/Expression.swift; sourceTree = "<group>"; };
+		163FDD81FBA571F12E00B016C778B6D2 /* Pods-macos_learn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-macos_learn.release.xcconfig"; sourceTree = "<group>"; };
+		170F2C6977D6EFCFFA91364065F337E7 /* Cartography-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-prefix.pch"; sourceTree = "<group>"; };
+		19AAF2F6CD1EAE633C8FD5C74C91DA74 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Cartography/Priority.swift; sourceTree = "<group>"; };
+		1E5579196ED930F79E04138193E45CAE /* Coefficients.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coefficients.swift; path = Cartography/Coefficients.swift; sourceTree = "<group>"; };
+		1F4DD8A136C97B386D2A3EF6D458FD8F /* Pods-macos_learn-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-macos_learn-dummy.m"; sourceTree = "<group>"; };
+		22CFB6DC0CC322EAAB670359CF0E2806 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Cartography/Extensions.swift; sourceTree = "<group>"; };
+		24B1B3112FB60CC009C67287657EFFB9 /* Cartography.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cartography.xcconfig; sourceTree = "<group>"; };
+		24D51A07E09BA0136DCCEE704FB08A2B /* LayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupport.swift; path = Cartography/LayoutSupport.swift; sourceTree = "<group>"; };
+		31565A84FD81C40289B9C19B8FB80DD1 /* Cartography.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cartography.framework; path = Cartography.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34B892E6C85B5809039B54D1386A6AC3 /* ORSSerialBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialBuffer.h; path = Source/ORSSerialBuffer.h; sourceTree = "<group>"; };
+		395167F6AE4180112C91CD9DD86E07F5 /* Constrain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constrain.swift; path = Cartography/Constrain.swift; sourceTree = "<group>"; };
+		3A88B42B0AC996D1C5DAEB25EFB6352D /* Pods-macos_learn-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-macos_learn-frameworks.sh"; sourceTree = "<group>"; };
+		3B6A8BFAB11CEE391DCE7FF4F407F231 /* LayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutProxy.swift; path = Cartography/LayoutProxy.swift; sourceTree = "<group>"; };
+		42658C7560CC2FC22D695F3AD5812228 /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialPacketDescriptor.h; path = Source/ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		47A88481FE7E6A728CEF855C25AAE5F2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		4DEE479F189D89A041373B67761B40BD /* Cartography-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cartography-umbrella.h"; sourceTree = "<group>"; };
+		4F92161C85C61A96A3457B96EC7E664D /* Align.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Align.swift; path = Cartography/Align.swift; sourceTree = "<group>"; };
+		51DE72917D5BFDC54C2955B837E6FFC3 /* Cartography-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cartography-Info.plist"; sourceTree = "<group>"; };
+		53F9F4BAB81AD3AC5D4FA008CCA2B538 /* ORSSerialRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialRequest.h; path = Source/ORSSerialRequest.h; sourceTree = "<group>"; };
+		57EF53213C379B3344029E726BC6E372 /* Pods-macos_learn-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macos_learn-acknowledgements.plist"; sourceTree = "<group>"; };
+		5FF80AA3F313E60C25CEDBD91A46BBC2 /* ORSSerialRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialRequest.m; path = Source/ORSSerialRequest.m; sourceTree = "<group>"; };
+		670E59EF6FBD3039F4C0180F749262F6 /* Pods-macos_learn-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-macos_learn-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6819236AF37AFC3F43B5D068D7A623EB /* Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edges.swift; path = Cartography/Edges.swift; sourceTree = "<group>"; };
+		691107C68639CEF8E146AA91CB544936 /* ORSSerialPort-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ORSSerialPort-dummy.m"; sourceTree = "<group>"; };
+		6A556481D31201CC4EB40B4F9364AF6B /* LayoutProxy+TypeErasure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "LayoutProxy+TypeErasure.swift"; path = "Cartography/LayoutProxy+TypeErasure.swift"; sourceTree = "<group>"; };
+		700B2F4C7918F6A88F54FA847DC4CE00 /* LayoutGuideProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuideProxy.swift; path = Cartography/LayoutGuideProxy.swift; sourceTree = "<group>"; };
+		785A04DF5B1BA90F7F82770FB30A4F88 /* Pods-macos_learn-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-macos_learn-umbrella.h"; sourceTree = "<group>"; };
+		7B26CB1FA3E93622CE9ED3CF8048036A /* Distribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Distribute.swift; path = Cartography/Distribute.swift; sourceTree = "<group>"; };
+		7F1F94DA9935EE2E95E3D827A492E6B2 /* ORSSerialPort-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort-umbrella.h"; sourceTree = "<group>"; };
+		8018657B2D5016E1A43F43EBCDBA0553 /* Pods-macos_learn-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-macos_learn-Info.plist"; sourceTree = "<group>"; };
+		88D1036E90EE92E8FE3C5937673CBA3A /* ORSSerialPort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPort.m; path = Source/ORSSerialPort.m; sourceTree = "<group>"; };
+		8D0B4E3370C838176FC0DCF68E97E594 /* AutoresizingMaskLayoutProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoresizingMaskLayoutProxy.swift; path = Cartography/AutoresizingMaskLayoutProxy.swift; sourceTree = "<group>"; };
+		8DEFC65D507B8A25397CBD6E6B4B0682 /* Cartography-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cartography-dummy.m"; sourceTree = "<group>"; };
+		94E6FE00D4433DCC82EC258C64B01C4B /* ORSSerialPort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialPort.h; path = Source/ORSSerialPort.h; sourceTree = "<group>"; };
+		99D90F26AAB4BCC676A0E7D72F7E6CCF /* Compound.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compound.swift; path = Cartography/Compound.swift; sourceTree = "<group>"; };
+		9A326131A837D9C7F5BC4FED66355D6E /* ORSSerialBuffer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialBuffer.m; path = Source/ORSSerialBuffer.m; sourceTree = "<group>"; };
+		9B6BAB0D13CD2B5814A1ABA0A44F140D /* ORSSerialPort-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ORSSerialPort-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F5CBBFE2E3BF88C367B46B1FD039F50 /* Cartography.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cartography.modulemap; sourceTree = "<group>"; };
+		A0E298A4AAC335BEDA86EEB70774A367 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = Cartography/Context.swift; sourceTree = "<group>"; };
+		A5CEA9C2D9DDE43CBDBEA0417AF17BC6 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPacketDescriptor.m; path = Source/ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		C3A756A72F3A75D08ECBC343A103D68E /* LayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutGuide.swift; path = Cartography/LayoutGuide.swift; sourceTree = "<group>"; };
+		C4B6A9C50E6F3B16FE00DA731F30625A /* ViewProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewProxy.swift; path = Cartography/ViewProxy.swift; sourceTree = "<group>"; };
+		C70EA49C780E0C4E59B81A339CA4B692 /* ORSSerialPort.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ORSSerialPort.xcconfig; sourceTree = "<group>"; };
+		CD6F57B0BED761CBE4231ED51837F646 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ORSSerialPortManager.m; path = Source/ORSSerialPortManager.m; sourceTree = "<group>"; };
+		CF82AA65E71E04959349D0AB1F3960A2 /* Edge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Edge.swift; path = Cartography/Edge.swift; sourceTree = "<group>"; };
+		D24D7F15852908C745DA17C732F4BE42 /* LayoutSupportProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutSupportProxy.swift; path = Cartography/LayoutSupportProxy.swift; sourceTree = "<group>"; };
+		D63216C098C1946EC7C6368637209A5B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		D909C3465668DACE32F4D11A0DF51F04 /* Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dimension.swift; path = Cartography/Dimension.swift; sourceTree = "<group>"; };
+		DAC7F15EA59FE5537AED23382558CF20 /* ORSSerial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ORSSerial.framework; path = ORSSerialPort.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5A560BB4CB3A7F53F75C200E0C281C /* ConstraintGroup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintGroup.swift; path = Cartography/ConstraintGroup.swift; sourceTree = "<group>"; };
+		DD0E44E1CDFE075AE549C3CC695D08A0 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Cartography/View.swift; sourceTree = "<group>"; };
+		E10D36064176B88F8EEFEA6F65E485CE /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Cartography/Constraint.swift; sourceTree = "<group>"; };
+		E167D9D117433FC0DCCF9266AAFC15F5 /* Point.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Point.swift; path = Cartography/Point.swift; sourceTree = "<group>"; };
+		E7EB9A6798AEAC76C9E386DF16195411 /* ORSSerialPort.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ORSSerialPort.modulemap; sourceTree = "<group>"; };
+		F427C9EAE32D8A8EADC97D97E4823202 /* ORSSerialPort-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ORSSerialPort-prefix.pch"; sourceTree = "<group>"; };
+		F98C7795B6BBB2AFC80D9074D452C1E3 /* Pods-macos_learn.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-macos_learn.modulemap"; sourceTree = "<group>"; };
+		FFFAF45500D997259F251C300D4A1475 /* ORSSerialPortManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ORSSerialPortManager.h; path = Source/ORSSerialPortManager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3426B15B3A1EF3577639F3EA1253BC01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACDD3A6408F9733576C5E6892965ACC6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B534501684E45F65C3703D3DDE219B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38D05E5BD5B08D5B3A49FBCF96F4A20E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DD7375CEEC7B1AA1AD1DF37006CE48D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B290B7C04280B113FA0362B88DEB4F33 /* Cocoa.framework in Frameworks */,
+				A0723E428B0263F66F9A023A35C447CE /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		173FA1E13FD6ADC0B56CAF8A38CF6F89 /* ORSSerialPort */ = {
+			isa = PBXGroup;
+			children = (
+				34B892E6C85B5809039B54D1386A6AC3 /* ORSSerialBuffer.h */,
+				9A326131A837D9C7F5BC4FED66355D6E /* ORSSerialBuffer.m */,
+				42658C7560CC2FC22D695F3AD5812228 /* ORSSerialPacketDescriptor.h */,
+				A5CEA9C2D9DDE43CBDBEA0417AF17BC6 /* ORSSerialPacketDescriptor.m */,
+				94E6FE00D4433DCC82EC258C64B01C4B /* ORSSerialPort.h */,
+				88D1036E90EE92E8FE3C5937673CBA3A /* ORSSerialPort.m */,
+				FFFAF45500D997259F251C300D4A1475 /* ORSSerialPortManager.h */,
+				CD6F57B0BED761CBE4231ED51837F646 /* ORSSerialPortManager.m */,
+				53F9F4BAB81AD3AC5D4FA008CCA2B538 /* ORSSerialRequest.h */,
+				5FF80AA3F313E60C25CEDBD91A46BBC2 /* ORSSerialRequest.m */,
+				9CD243DC5E4A784F2BE77CA7B72EB888 /* Support Files */,
+			);
+			name = ORSSerialPort;
+			path = ORSSerialPort;
+			sourceTree = "<group>";
+		};
+		2343C9427F13F91F787BC6045A93C030 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				D63216C098C1946EC7C6368637209A5B /* Cocoa.framework */,
+				47A88481FE7E6A728CEF855C25AAE5F2 /* IOKit.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		96A1F8B223F1E44D6A755750389A7731 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C04A18BE477C3354C5CD280AFEE43584 /* Cartography */,
+				173FA1E13FD6ADC0B56CAF8A38CF6F89 /* ORSSerialPort */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CD243DC5E4A784F2BE77CA7B72EB888 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7EB9A6798AEAC76C9E386DF16195411 /* ORSSerialPort.modulemap */,
+				C70EA49C780E0C4E59B81A339CA4B692 /* ORSSerialPort.xcconfig */,
+				691107C68639CEF8E146AA91CB544936 /* ORSSerialPort-dummy.m */,
+				9B6BAB0D13CD2B5814A1ABA0A44F140D /* ORSSerialPort-Info.plist */,
+				F427C9EAE32D8A8EADC97D97E4823202 /* ORSSerialPort-prefix.pch */,
+				7F1F94DA9935EE2E95E3D827A492E6B2 /* ORSSerialPort-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ORSSerialPort";
+			sourceTree = "<group>";
+		};
+		9FA1B093CA5ACC83592992ECFF31434F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31565A84FD81C40289B9C19B8FB80DD1 /* Cartography.framework */,
+				DAC7F15EA59FE5537AED23382558CF20 /* ORSSerial.framework */,
+				0659D14DBDC0E20A369CAD590EA84F9A /* Pods_macos_learn.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B48AD185F4226A08A36A2F32DC938B24 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9F5CBBFE2E3BF88C367B46B1FD039F50 /* Cartography.modulemap */,
+				24B1B3112FB60CC009C67287657EFFB9 /* Cartography.xcconfig */,
+				8DEFC65D507B8A25397CBD6E6B4B0682 /* Cartography-dummy.m */,
+				51DE72917D5BFDC54C2955B837E6FFC3 /* Cartography-Info.plist */,
+				170F2C6977D6EFCFFA91364065F337E7 /* Cartography-prefix.pch */,
+				4DEE479F189D89A041373B67761B40BD /* Cartography-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cartography";
+			sourceTree = "<group>";
+		};
+		C04A18BE477C3354C5CD280AFEE43584 /* Cartography */ = {
+			isa = PBXGroup;
+			children = (
+				4F92161C85C61A96A3457B96EC7E664D /* Align.swift */,
+				8D0B4E3370C838176FC0DCF68E97E594 /* AutoresizingMaskLayoutProxy.swift */,
+				1E5579196ED930F79E04138193E45CAE /* Coefficients.swift */,
+				99D90F26AAB4BCC676A0E7D72F7E6CCF /* Compound.swift */,
+				395167F6AE4180112C91CD9DD86E07F5 /* Constrain.swift */,
+				E10D36064176B88F8EEFEA6F65E485CE /* Constraint.swift */,
+				DC5A560BB4CB3A7F53F75C200E0C281C /* ConstraintGroup.swift */,
+				A0E298A4AAC335BEDA86EEB70774A367 /* Context.swift */,
+				D909C3465668DACE32F4D11A0DF51F04 /* Dimension.swift */,
+				7B26CB1FA3E93622CE9ED3CF8048036A /* Distribute.swift */,
+				CF82AA65E71E04959349D0AB1F3960A2 /* Edge.swift */,
+				6819236AF37AFC3F43B5D068D7A623EB /* Edges.swift */,
+				156599C940D4124A23E2F78281BFA0CE /* Expression.swift */,
+				22CFB6DC0CC322EAAB670359CF0E2806 /* Extensions.swift */,
+				C3A756A72F3A75D08ECBC343A103D68E /* LayoutGuide.swift */,
+				700B2F4C7918F6A88F54FA847DC4CE00 /* LayoutGuideProxy.swift */,
+				12039879D0A741078C56311624A2D904 /* LayoutItem.swift */,
+				3B6A8BFAB11CEE391DCE7FF4F407F231 /* LayoutProxy.swift */,
+				6A556481D31201CC4EB40B4F9364AF6B /* LayoutProxy+TypeErasure.swift */,
+				24D51A07E09BA0136DCCEE704FB08A2B /* LayoutSupport.swift */,
+				D24D7F15852908C745DA17C732F4BE42 /* LayoutSupportProxy.swift */,
+				E167D9D117433FC0DCCF9266AAFC15F5 /* Point.swift */,
+				19AAF2F6CD1EAE633C8FD5C74C91DA74 /* Priority.swift */,
+				09DDFE4DF2364CA8AE32516A930EB60B /* Property.swift */,
+				11A5C17C03CB8191E8775D78B9413606 /* Size.swift */,
+				DD0E44E1CDFE075AE549C3CC695D08A0 /* View.swift */,
+				C4B6A9C50E6F3B16FE00DA731F30625A /* ViewProxy.swift */,
+				B48AD185F4226A08A36A2F32DC938B24 /* Support Files */,
+			);
+			name = Cartography;
+			path = Cartography;
+			sourceTree = "<group>";
+		};
+		C080C886C9E2F80D52E3E86A62E5B711 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2343C9427F13F91F787BC6045A93C030 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C080C886C9E2F80D52E3E86A62E5B711 /* Frameworks */,
+				96A1F8B223F1E44D6A755750389A7731 /* Pods */,
+				9FA1B093CA5ACC83592992ECFF31434F /* Products */,
+				DF623605CD7E2D6BBDB5D41EB80656CE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DF623605CD7E2D6BBDB5D41EB80656CE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB0C024E7A7ADF4E462A5A9B0591A124 /* Pods-macos_learn */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FB0C024E7A7ADF4E462A5A9B0591A124 /* Pods-macos_learn */ = {
+			isa = PBXGroup;
+			children = (
+				F98C7795B6BBB2AFC80D9074D452C1E3 /* Pods-macos_learn.modulemap */,
+				670E59EF6FBD3039F4C0180F749262F6 /* Pods-macos_learn-acknowledgements.markdown */,
+				57EF53213C379B3344029E726BC6E372 /* Pods-macos_learn-acknowledgements.plist */,
+				1F4DD8A136C97B386D2A3EF6D458FD8F /* Pods-macos_learn-dummy.m */,
+				3A88B42B0AC996D1C5DAEB25EFB6352D /* Pods-macos_learn-frameworks.sh */,
+				8018657B2D5016E1A43F43EBCDBA0553 /* Pods-macos_learn-Info.plist */,
+				785A04DF5B1BA90F7F82770FB30A4F88 /* Pods-macos_learn-umbrella.h */,
+				02DEEC5EBF5803E74952677C45922354 /* Pods-macos_learn.debug.xcconfig */,
+				163FDD81FBA571F12E00B016C778B6D2 /* Pods-macos_learn.release.xcconfig */,
+			);
+			name = "Pods-macos_learn";
+			path = "Target Support Files/Pods-macos_learn";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A75D70A1856164867A5EFF4EE41B7F05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EDDE083B2E725C0448399E64949630C /* ORSSerialBuffer.h in Headers */,
+				7354AEE6A2CCD6CF94242AD4CF89A1D7 /* ORSSerialPacketDescriptor.h in Headers */,
+				263142CA7E25C79FC87B18E71EE500AC /* ORSSerialPort-umbrella.h in Headers */,
+				670478DCAAA7B43B2AE687B62D44A2D9 /* ORSSerialPort.h in Headers */,
+				8B42BA13BEEE456A84E59B0204D8F1E1 /* ORSSerialPortManager.h in Headers */,
+				5C32A437E494FD34E81B98695435C558 /* ORSSerialRequest.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C56A77F36D083F3CB78EB29C30350350 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16C3D5E287AD02B9C70FC35A792D106 /* Pods-macos_learn-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6264F95D9B1176E8E118DC17BEF2224 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CBA5FDBBC1B11DD22E53A77138F150 /* Cartography-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57DDDA5C831455FB20F4FF618CF51434 /* Cartography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCF40F2F311C3013CDE15D5CD0F4F0EB /* Build configuration list for PBXNativeTarget "Cartography" */;
+			buildPhases = (
+				C6264F95D9B1176E8E118DC17BEF2224 /* Headers */,
+				5DE7AA2214B18B20638929413B35E821 /* Sources */,
+				6B534501684E45F65C3703D3DDE219B4 /* Frameworks */,
+				018047054321B247695B7C34B28EC9B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cartography;
+			productName = Cartography;
+			productReference = 31565A84FD81C40289B9C19B8FB80DD1 /* Cartography.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		708D003F9C720BD33E7978206818B248 /* ORSSerialPort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90DC7468EB91A7CC870D225589155AE0 /* Build configuration list for PBXNativeTarget "ORSSerialPort" */;
+			buildPhases = (
+				A75D70A1856164867A5EFF4EE41B7F05 /* Headers */,
+				F5A5DEEBB6EAD76F61F99519B0E65055 /* Sources */,
+				9DD7375CEEC7B1AA1AD1DF37006CE48D /* Frameworks */,
+				EA6981F6A853EE95B08B78992D97F5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ORSSerialPort;
+			productName = ORSSerialPort;
+			productReference = DAC7F15EA59FE5537AED23382558CF20 /* ORSSerial.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E75382ACEEA9D8DD6A693F3F88091790 /* Pods-macos_learn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B845A18145043B67127D65D02F10A09 /* Build configuration list for PBXNativeTarget "Pods-macos_learn" */;
+			buildPhases = (
+				C56A77F36D083F3CB78EB29C30350350 /* Headers */,
+				386CDF647602FB88DC4AAC3D23BBB6A7 /* Sources */,
+				3426B15B3A1EF3577639F3EA1253BC01 /* Frameworks */,
+				D5C4E6EDDF4C32D868FDADF064FDC31E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D77C95A2695DA6E3982A5B3C0441535 /* PBXTargetDependency */,
+				A3BEC217D05E1DC24ED7B6BD85FD42BD /* PBXTargetDependency */,
+			);
+			name = "Pods-macos_learn";
+			productName = "Pods-macos_learn";
+			productReference = 0659D14DBDC0E20A369CAD590EA84F9A /* Pods_macos_learn.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9FA1B093CA5ACC83592992ECFF31434F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57DDDA5C831455FB20F4FF618CF51434 /* Cartography */,
+				708D003F9C720BD33E7978206818B248 /* ORSSerialPort */,
+				E75382ACEEA9D8DD6A693F3F88091790 /* Pods-macos_learn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		018047054321B247695B7C34B28EC9B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5C4E6EDDF4C32D868FDADF064FDC31E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA6981F6A853EE95B08B78992D97F5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		386CDF647602FB88DC4AAC3D23BBB6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F36039D67FAB7EB0920FBD5E93061362 /* Pods-macos_learn-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE7AA2214B18B20638929413B35E821 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EEF39B0DA95517F805323112A5CBFF8 /* Align.swift in Sources */,
+				ABBB116A073E7C682F7F6863D5E7729C /* AutoresizingMaskLayoutProxy.swift in Sources */,
+				3A5E5B04623E4707664C4334CA6905E6 /* Cartography-dummy.m in Sources */,
+				84C0F90298C911603897B3CCDEFD330F /* Coefficients.swift in Sources */,
+				573C9CE105BFC8826ADBCCCC8F1BC9B9 /* Compound.swift in Sources */,
+				A75846BC6E5DF1902E22BB032A6FCE0D /* Constrain.swift in Sources */,
+				02BBBADC3E6DC747C030A99DF20EB531 /* Constraint.swift in Sources */,
+				F25A1A8E53CE5CAB05D2C5D1516A233B /* ConstraintGroup.swift in Sources */,
+				297AD27064E5F26EF7FAAFE739FA0514 /* Context.swift in Sources */,
+				E6841949F497AEE368E6D1D84049A15D /* Dimension.swift in Sources */,
+				671A0F6DE62F40D72D223D7462B6BAB2 /* Distribute.swift in Sources */,
+				99CE86F391D6CE28EB52E85B786F96C6 /* Edge.swift in Sources */,
+				830DF76D1B7EB7FDDFF0AE4598C5E058 /* Edges.swift in Sources */,
+				41C1283E9FA9D44D9A3B5EEBF7BCCED6 /* Expression.swift in Sources */,
+				52BBDED723BCE758ABCC796F2266177B /* Extensions.swift in Sources */,
+				2AE5D2215BF58A3D7FD4F87D256ADEB1 /* LayoutGuide.swift in Sources */,
+				F1BD29EE223FA3AE81C8C8F973FF2852 /* LayoutGuideProxy.swift in Sources */,
+				00236C834C7A127CE32202698627FDAA /* LayoutItem.swift in Sources */,
+				28DDDCD8E16F527C375B863AB0D7C6AA /* LayoutProxy+TypeErasure.swift in Sources */,
+				779CFEB63C5C71608B00D77BA095DFC9 /* LayoutProxy.swift in Sources */,
+				66FE80F63CE053E6FE1CC2E0F1CCFCC1 /* LayoutSupport.swift in Sources */,
+				BB0AE0F60848088A834341ED2E9A1F77 /* LayoutSupportProxy.swift in Sources */,
+				4A471CF53AD5174580D31C108AA6C96C /* Point.swift in Sources */,
+				C03A14B636DF3284FD0407A0BB4BF26B /* Priority.swift in Sources */,
+				BB5D4E4A7047047C4C48DF677FFCBF02 /* Property.swift in Sources */,
+				54B928421E9142AB9C478B4799EC1225 /* Size.swift in Sources */,
+				590E2E8D217D8CC7F87D547BAE7073D2 /* View.swift in Sources */,
+				685A8EB9BB5E42309C03DD9607EB1648 /* ViewProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A5DEEBB6EAD76F61F99519B0E65055 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B4C9AB6D35257E3D14C3F5C6F2C4B5 /* ORSSerialBuffer.m in Sources */,
+				65D7C654D704CA14937A888ADCE31D79 /* ORSSerialPacketDescriptor.m in Sources */,
+				DF1DDD621CD4880120BBA42AD7AE208A /* ORSSerialPort-dummy.m in Sources */,
+				CEC61FB002508003B7C7D476F2F4A1FF /* ORSSerialPort.m in Sources */,
+				4DF5497F3CD711F133A88E4E4290C386 /* ORSSerialPortManager.m in Sources */,
+				F6634F4512DE2566EB5D6478A24F4C18 /* ORSSerialRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D77C95A2695DA6E3982A5B3C0441535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cartography;
+			target = 57DDDA5C831455FB20F4FF618CF51434 /* Cartography */;
+			targetProxy = E5FA9CF2E78BBBB6A6049E8094FE4BF7 /* PBXContainerItemProxy */;
+		};
+		A3BEC217D05E1DC24ED7B6BD85FD42BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ORSSerialPort;
+			target = 708D003F9C720BD33E7978206818B248 /* ORSSerialPort */;
+			targetProxy = 0C9330EA2C7293649DA42321976463A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D9F78CFD098DDFD13036F5154B08F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70EA49C780E0C4E59B81A339CA4B692 /* ORSSerialPort.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ORSSerialPort/ORSSerialPort-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ORSSerialPort/ORSSerialPort-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/ORSSerialPort/ORSSerialPort.modulemap";
+				PRODUCT_MODULE_NAME = ORSSerial;
+				PRODUCT_NAME = ORSSerial;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1DD9CB0E942E26E27F58708904ADD9D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B1B3112FB60CC009C67287657EFFB9 /* Cartography.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Cartography-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				PRODUCT_MODULE_NAME = Cartography;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2A68C8270809A3FB22903246C0515D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 163FDD81FBA571F12E00B016C778B6D2 /* Pods-macos_learn.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-macos_learn/Pods-macos_learn-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-macos_learn/Pods-macos_learn.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F4FFA95E8159A78942D192775923314 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24B1B3112FB60CC009C67287657EFFB9 /* Cartography.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Cartography/Cartography-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cartography/Cartography-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Cartography/Cartography.modulemap";
+				PRODUCT_MODULE_NAME = Cartography;
+				PRODUCT_NAME = Cartography;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70F0CA502E5ED50DD0BBEB26B5BCD521 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02DEEC5EBF5803E74952677C45922354 /* Pods-macos_learn.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-macos_learn/Pods-macos_learn-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MODULEMAP_FILE = "Target Support Files/Pods-macos_learn/Pods-macos_learn.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97735B90B60C29A8D1118A0462F30A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B0A822D63FF42D4E298434E6691C87D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C70EA49C780E0C4E59B81A339CA4B692 /* ORSSerialPort.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/ORSSerialPort/ORSSerialPort-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ORSSerialPort/ORSSerialPort-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MODULEMAP_FILE = "Target Support Files/ORSSerialPort/ORSSerialPort.modulemap";
+				PRODUCT_MODULE_NAME = ORSSerial;
+				PRODUCT_NAME = ORSSerial;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0A5C185E6F96F034A3680A0F734FD8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97735B90B60C29A8D1118A0462F30A17 /* Debug */,
+				D0A5C185E6F96F034A3680A0F734FD8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B845A18145043B67127D65D02F10A09 /* Build configuration list for PBXNativeTarget "Pods-macos_learn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F0CA502E5ED50DD0BBEB26B5BCD521 /* Debug */,
+				2A68C8270809A3FB22903246C0515D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90DC7468EB91A7CC870D225589155AE0 /* Build configuration list for PBXNativeTarget "ORSSerialPort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0A822D63FF42D4E298434E6691C87D6 /* Debug */,
+				1D9F78CFD098DDFD13036F5154B08F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCF40F2F311C3013CDE15D5CD0F4F0EB /* Build configuration list for PBXNativeTarget "Cartography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4FFA95E8159A78942D192775923314 /* Debug */,
+				1DD9CB0E942E26E27F58708904ADD9D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
